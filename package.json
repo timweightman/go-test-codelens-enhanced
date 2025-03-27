@@ -1,0 +1,56 @@
+{
+  "name": "go-test-codelens-enhanced",
+  "displayName": "Go Test CodeLens - Enhanced",
+  "description": "Go Test CodeLens - Run and Debug table-driven tests",
+  "icon": "images/icon.png",
+  "version": "0.0.3",
+  "publisher": "timweightman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timweightman/go-test-codelens-enhanced"
+  },
+  "engines": {
+    "vscode": "^1.96.2",
+    "node": "20.18.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:go"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "go-test-codelens-enhanced.exec",
+        "title": "Run Tests At Cursor",
+        "category": "Go Test CodeLens Enhanced"
+      },
+      {
+        "command": "go-test-codelens-enhanced.debug",
+        "title": "Debug Tests At Cursor",
+        "category": "Go Test CodeLens Enhanced"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./ && cp -r ./extension/bin ./out/",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint extension --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/vscode": "^1.96.2",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
+}
