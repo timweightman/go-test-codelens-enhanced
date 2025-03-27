@@ -3,16 +3,19 @@
 A VS Code extension that enhances the Go testing experience by providing CodeLens support for running and debugging table-driven tests directly from your editor.
 
 ## CodeLens support for table-driven tests
-Specialised CodeLens using Go's AST package to support the table-driven test pattern
-- Includes both `Run test` and `Debug test` options for each scenario.
+Specialised CodeLens using Go's AST package to support the table-driven test pattern.
 
-### 🗺️ Maps
+Relies on the [Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.Go) extension.
+
+`Run test` | `Debug test` - both supported, for individual table-driven test scenarios.
+
+## 🗺️ Maps
 ![Run/Debug CodeLens for map table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/map-table-test.png)
 
-### 🍞 Slices
+## 🍞 Slices
 ![Run/Debug CodeLens for slice table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/slice-table-test.png)
 
-### 🦹 What are you doing, you monster! (but it _does_ work) 🙈
+## 🦹 What are you doing, you monster! (but it _does_ work) 🙈
 ![Run/Debug CodeLens for messy table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/silly-double-table-test.png)
 ## How It Works
 1. Open any Go test file (*_test.go)
