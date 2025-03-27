@@ -8,7 +8,7 @@ A VS Code extension that enhances the Go testing experience by providing CodeLen
 - **Table-Driven Tests**: Special support for Go's table-driven test pattern
   - Run or debug individual test cases that are defined in a slice or map
 
-![Example of Run/Debug CodeLens on table-driven tests]()
+![Example of Run/Debug CodeLens on table-driven tests](./example.png)
 
 ### How It Works
 1. Open any Go test file (*_test.go)
