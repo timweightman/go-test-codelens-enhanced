@@ -19,6 +19,13 @@
   "activationEvents": [
     "onLanguage:go"
   ],
+  "files": [
+    "out/**/*",
+    "images/**/*",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [

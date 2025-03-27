@@ -7,14 +7,13 @@ Specialised CodeLens using Go's AST package to support the table-driven test pat
 - Includes both `Run test` and `Debug test` options for each scenario.
 
 ### 🗺️ Maps
-![Run/Debug CodeLens for map table-driven tests](./map-table-test.png)
+![Run/Debug CodeLens for map table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/map-table-test.png)
 
 ### 🍞 Slices
-![Run/Debug CodeLens for slice table-driven tests](./slice-table-test.png)
+![Run/Debug CodeLens for slice table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/slice-table-test.png)
 
 ### 🦹 What are you doing, you monster! (but it _does_ work) 🙈
-![Run/Debug CodeLens for messy table-driven tests](./silly-double-table-test.png)
-
+![Run/Debug CodeLens for messy table-driven tests](https://raw.githubusercontent.com/timweightman/go-test-codelens-enhanced/refs/heads/main/images/silly-double-table-test.png)
 ## How It Works
 1. Open any Go test file (*_test.go)
 1. Find any slice- or map-based table-driven tests
