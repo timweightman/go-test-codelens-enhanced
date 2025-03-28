@@ -63,7 +63,7 @@ class CodelensProvider implements vscode.CodeLensProvider {
 
 function register(context: vscode.ExtensionContext) {
   const fileNameSuffix = "_test.go";
-  const options = { pattern: `**/*${fileNameSuffix}`, language: "go" };
+  const options = { language: "go" };
 
   context.subscriptions.push(
     vscode.languages.registerCodeLensProvider(options, new CodelensProvider(context, fileNameSuffix))

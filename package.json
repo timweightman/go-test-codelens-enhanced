@@ -3,7 +3,7 @@
   "displayName": "Go Test CodeLens - Enhanced",
   "description": "Go Test CodeLens - Run and Debug table-driven tests",
   "icon": "images/icon.png",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "timweightman",
   "repository": {
     "type": "git",

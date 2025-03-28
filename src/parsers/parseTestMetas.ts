@@ -20,13 +20,9 @@ export function parseTestMetas(src: string): TestMeta[] {
       const declarationBlock = parseDeclarationBlock(src, forRange.rangeVar, testFunc);
       if (!declarationBlock) continue
 
-      // Determine if this is a map or slice declaration
-      const isMapDeclaration = declarationBlock.text.includes('map[');
-      const isSliceDeclaration = declarationBlock.text.includes('[]struct');
-
-      if (isMapDeclaration) {
+      if (declarationBlock.type === 'map') {
         testMetas.push(...parseTestMetasInMapDeclaration(src, declarationBlock, testFunc));
-      } else if (isSliceDeclaration) {
+      } else if (declarationBlock.type === 'slice') {
         const tRunCalls = parseTRunCalls(src, forRange);
         testMetas.push(...tRunCalls.flatMap(tRunCall => parseTestMetasInSliceDeclaration(
           src,
