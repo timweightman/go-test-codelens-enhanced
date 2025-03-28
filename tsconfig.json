@@ -7,7 +7,7 @@
 			"ES2022"
 		],
 		"sourceMap": true,
-		"rootDir": "extension",
+		"rootDir": "src",
 		"strict": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
@@ -20,8 +20,10 @@
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true
 	},
+	"include": [
+		"src/**/*.ts",
+	],
 	"exclude": [
-		"node_modules",
-		".vscode-test"
+		"src/**/*.test.ts"
 	]
 }
